@@ -67,11 +67,10 @@ $black: rgb(18, 18, 18);
         width: 52px;
         height: 45px;
         position: relative;
-        background: #fff;
         &:before{
             position: absolute;
             content: "";
-            width: 42px;
+            width: 52px;
             height: 1px;
             background-color: #581F1F;
             top: 50%;
@@ -86,7 +85,6 @@ $black: rgb(18, 18, 18);
         right: 20px;
         width: 45px;
         height: 45px;
-        background: #fff;
         &__line{
             position: absolute;
             left: 12px;
@@ -121,6 +119,7 @@ $black: rgb(18, 18, 18);
             }
         }
         &__nav{
+            background: #fff;
             &:hover{
                 cursor: pointer;
             }
