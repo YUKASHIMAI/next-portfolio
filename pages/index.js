@@ -1,209 +1,191 @@
 import Head from 'next/head'
+import Image from 'next/image'
+import Layout, {siteTitle} from '../components/layout'
+import styles from '../components/layout.module.scss'
+import homeStyles from '../styles/home.module.scss'
+import Link from 'next/link'
+// import Swiper from 'react-id-swiper';
+// import { Autoplay, Swiper as RealSwiper } from "swiper";
+// RealSwiper.use([Autoplay]);
+// import SwiperCore, { Pagination } from "swiper";
+// SwiperCore.use([Pagination]);
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import ReactTextTransition, { presets } from "react-text-transition";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react'
+import Slider from "react-slick";
+
+
+const name = 'yuuka shimai'
 
 export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
+  // WROKSスライダー
+  const settings = {
+      dots: true,
+      arrows: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      cssEase: "linear",
+      initialSlide: 0,
+      centerMode: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 0,
+            centerMode: true
           }
         }
-      `}</style>
+      ]
+  };
+  // スクロール時要素をふわっと表示
+  useEffect(() => {
+    AOS.init();
+  });
+  const text = "Port-folio"
+  // const text2 = "Hi,I'm Yuuka 👋🏻"
+  return (
+    <Layout home>
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
+      <div className={homeStyles.l_mainVisual}>
+        <div className={homeStyles.l_mainVisual__inner}>
+          <div className={homeStyles.l_mainVisual__areaTit}>
+          <p id="l_mainVisual__tit" className={homeStyles.l_mainVisual__tit}>
+            {text.split("").map(function(char, index){
+              const style = {"animation-delay": (300 + index * 300) + "ms"};
+              return <span key={index} style={style}>{char}</span>;
+            })}
+          </p>
+          </div>
+          <div className={homeStyles.l_mainVisual__menu}>
+            <div className={homeStyles.l_mainVisual__name}>by. yuka shimai</div> 
+            <div className={homeStyles.l_mainVisual__menu__list}>
+              <div className={homeStyles.l_mainVisual__menu__item}><AnchorLink href="#profile" className={homeStyles.l_mainVisual__menu__link}>PROFILE</AnchorLink></div> 
+              <div className={homeStyles.l_mainVisual__menu__item}><AnchorLink href="#skill" className={homeStyles.l_mainVisual__menu__link}>SKILL</AnchorLink></div> 
+              <div className={homeStyles.l_mainVisual__menu__item}><AnchorLink href="#works" className={homeStyles.l_mainVisual__menu__link}>WORKS</AnchorLink></div> 
+              <div className={homeStyles.l_mainVisual__menu__item}><AnchorLink href="#contact" className={homeStyles.l_mainVisual__menu__link}>CONTACT</AnchorLink></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
+      <div className="l_container">
+        <main>
+          <section id="profile" className={homeStyles.profile}>
+            <div className={homeStyles.profile__bg}></div> 
+            <div className={`${homeStyles.profile__inner} u-inner u-cf`} >
+              <h2 className={`${homeStyles.profile__tit} c-head01 u-font-times`} data-aos="fade-up" data-aos-duration="2000">PROFILE</h2> 
+              <div className={homeStyles.profile__areaLabelTxt}>
+                <div className={homeStyles.profile__areaLabel} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1100">
+                  <Image src="/static/image/top/profile.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
+                </div> 
+                <div className={homeStyles.profile__areaTxt}>
+                  <ul className={homeStyles.profile__list}>
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">1995年シンガポールにて出生。現在25歳、大阪府大阪市在住。<br />小学生の時代を香港で過ごし中学、高校時代を大阪で過ごす。</li> 
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">高校卒業後はアメリカ、サンフランシスコの短期大学にて経済学を専攻し日本に帰国。サンフランシスコにてプログラミング好きの仲間に出会ったことをきっかけにWEBの世界に惹かれプログラマーを目指す。</li> 
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">0から技術を習得したくWEB制作会社に入社後、コーディング、CMS組み込み作業に没頭しフロントエンドエンジニアとして成長。</li> 
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">その後フォーム構築やデータベース等、WEBサイト制作においての幅広い知識に触れ、現在はReact(Next.js)やLaravel等のワンランク上のスキルを磨いてる最中。</li>
+                  </ul>
+                  <div data-aos="fade-up" data-aos-duration="2000">
+                    <Link href="/profile">
+                      <a className={`${homeStyles.profile__btn} c-btn01`}>MORE ABOUT ME</a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/* #profile */}
+          <section id="skill" className={homeStyles.skill}>
+            <div className={`${homeStyles.skill__inner} u-inner u-cf`}>
+              <h2 className={`${homeStyles.skill__tit} c-head01 u-font-timese`} data-aos="fade-up" data-aos-duration="2000">SKILL</h2> 
+              <div className={`${homeStyles.skill__icons} skill__div u-cf`}>
+                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500">
+                  <Image src="/static/image/top/skill01.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                </div>
+                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+                  <Image src="/static/image/top/skill02.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                </div> 
+                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">
+                 <Image src="/static/image/top/skill03.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                </div> 
+                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="400">
+                  <Image src="/static/image/top/skill04.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                </div> 
+                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">
+                  <Image src="/static/image/top/skill05.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                </div> 
+                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="600">
+                  <Image src="/static/image/top/skill06.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                </div> 
+                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="700">
+                  <Image src="/static/image/top/skill07.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                </div>
+                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="800">
+                  <Image src="/static/image/top/skill08.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                </div> 
+                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="900">
+                  <Image src="/static/image/top/skill09.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                </div> 
+                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="1000">
+                  <Image src="/static/image/top/skill10.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                </div> 
+                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="1100">
+                  <Image src="/static/image/top/skill11.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                </div> <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="1200">
+                  <Image src="/static/image/top/skill12.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                </div>
+              </div>
+              <div className={`${homeStyles.skill__img} skill__div`} data-aos="fade-up" data-aos-duration="2000">
+                <Image src="/static/image/top/skill_image.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+              </div>
+            </div>
+          </section>
+          {/* #skill */}
+          <section id="works" class="works">
+            <div className={homeStyles.works__inner}>
+              <h2 className={`${homeStyles.works__tit} c-head01 u-font-times`} data-aos="fade-up" data-aos-duration="2000">WORKS</h2> 
+              <div className={`${homeStyles.works__areaList} u-inner`}>
+                <ul className={homeStyles.works__list}>
+                  <Slider {...settings}>
+                    <li className={`${homeStyles.works__item} agile__slide`}><Link href="https://www.oneship.biz/"><a className={homeStyles.works__link} target="_blank"><div className={homeStyles.works__item__img}><Image src="/static/image/top/works01.png" layout="intrinsic" width={560} height={400} alt=""></Image></div> <div className={homeStyles.works__item__areaTxt}><p className={homeStyles.works__item__txt}>#HTML #CSS #PHP #JQuery #Ajax #Azure</p></div></a></Link></li>
+                    <li className={`${homeStyles.works__item} agile__slide`}><Link href="https://yakujinryuoh.com/"><a className={homeStyles.works__link} target="_blank"><div className={homeStyles.works__item__img}><Image src="/static/image/top/works02.jpg" layout="intrinsic" width={560} height={400} alt=""></Image></div> <div className={homeStyles.works__item__areaTxt}><p className={homeStyles.works__item__txt}>#HTML #CSS #PHP #JQuery #SNS API連携</p></div></a></Link></li>
+                    <li className={`${homeStyles.works__item} agile__slide`}><Link href="https://shintora.co.jp/"><a className={homeStyles.works__link} target="_blank"><div className={homeStyles.works__item__img}><Image src="/static/image/top/works03.jpg" layout="intrinsic" width={560} height={400} alt=""></Image></div> <div className={homeStyles.works__item__areaTxt}><p className={homeStyles.works__item__txt}>#HTML #CSS #PHP #JQuery #WordPress #blog</p></div></a></Link></li>
+                    <li className={`${homeStyles.works__item} agile__slide`}><Link href="http://yshimai321.xsrv.jp/todos/todos/"><a className={homeStyles.works__link} target="_blank"><div className={homeStyles.works__item__img}><Image src="/static/image/top/works04.jpg" layout="intrinsic" width={560} height={400} alt=""></Image></div> <div className={homeStyles.works__item__areaTxt}><p className={homeStyles.works__item__txt}>#個人開発 #TodoList #Nuxt.js #Firebase</p></div></a></Link></li>
+                    <li className={`${homeStyles.works__item} agile__slide`}><Link href="http://yshimai321.xsrv.jp/contact/"><a className={homeStyles.works__link} target="_blank"><div className={homeStyles.works__item__img}><Image src="/static/image/top/works05.jpg" layout="intrinsic" width={560} height={400} alt=""></Image></div> <div className={homeStyles.works__item__areaTxt}><p className={homeStyles.works__item__txt}>#個人開発 #お問い合わせフォーム #Laravel #Bootstrap</p></div></a></Link></li>
+                    <li className={`${homeStyles.works__item} agile__slide`}><Link href="http://yshimai321.xsrv.jp/"><a className={homeStyles.works__link} target="_blank"><div className={homeStyles.works__item__img}><Image src="/static/image/top/works06.jpg" layout="intrinsic" width={560} height={400} alt=""></Image></div> <div className={homeStyles.works__item__areaTxt}><p className={homeStyles.works__item__txt}>#個人開発 #ポートフォリオ #Nuxt.js #BEM #FLOCSS</p></div></a></Link></li>
+                  </Slider>
+                </ul>
+              </div> 
+              <div className={homeStyles.works__bg}></div>
+            </div>
+          </section>
+          {/* #works */}
+          <section id="contact" className={homeStyles.contact}>
+            <div  className={`${homeStyles.contact__inner} u-inner`} data-aos="fade-up" data-aos-duration="2000">
+              <a href="/contact/" target="_blank">
+                <div className={homeStyles.contact__areaContact}>
+                  <h2  className={`${homeStyles.contact__tit} u-font-times`} data-aos="fade-up" data-aos-duration="2000">CONTACT</h2> 
+                  <p className={homeStyles.contact__txt} data-aos="fade-up" data-aos-duration="2000">こちらからお問い合わせください</p>
+                </div>
+              </a>
+            </div>
+          </section>
+          {/* contact */}
 
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+        </main>
+        <style jsx>{`
+        `}</style>
+      </div>
+    </Layout>
   )
 }
