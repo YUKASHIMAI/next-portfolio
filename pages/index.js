@@ -93,7 +93,7 @@ export default function Home() {
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">1995年シンガポールにて出生。現在25歳、大阪府大阪市在住。<br />小学生の時代を香港で過ごし中学、高校時代を大阪で過ごす。</li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">高校卒業後はアメリカ、サンフランシスコの短期大学にて経済学を専攻し日本に帰国。<br />サンフランシスコにてプログラミング好きの仲間に出会ったことをきっかけにWEBの世界に惹かれプログラマーを目指す。</li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">0から技術を習得するべくWEB制作会社に入社後、コーディング、CMS組み込み作業に没頭しフロントエンドエンジニアとして成長。</li> 
-                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">その後フォーム構築やデータベース等、WEBサイト制作においての幅広い知識に触れ、現在はReact(Next.js)やLaravel等のワンランク上のスキルを磨きながら日々より良いモノ作りのため勉強。</li>
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">その後フォーム構築やデータベース等、WEBサイト制作においての幅広い知識に触れ、現在はReact(Next.js)やLaravel等のワンランク上のスキルを磨きながら日々より良いモノ作りのため勉強中。</li>
                   </ul>
                   <div data-aos="fade-up" data-aos-duration="2000">
                     <Link href="/profile">
