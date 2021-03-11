@@ -211,6 +211,9 @@ $black: rgb(18, 18, 18);
       border-radius: 50%;
     }
   }
+  &__btn{
+    margin:40px auto 0;
+  }
   @include pc(){
     background-color: #fff;
     &:before{
@@ -325,7 +328,7 @@ $black: rgb(18, 18, 18);
     padding: 60px 0 85px;
   }
   &__bg{
-    margin: -140px 0 0;
+    margin: -200px 0 0;
     height: 250px;
     background-color: #AD1B51;
     border-radius: 0 0 25px 25px;

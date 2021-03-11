@@ -100,7 +100,10 @@ ol, ul{
 }
 
 .slick-slider .slick-dots{
-  bottom: -50px;
+  bottom: -20px;
+  @include pc(){
+    bottom: -40px;
+  }
 }
 .slick-slider .slick-dots li {
   margin: 0 10px;
@@ -111,11 +114,22 @@ ol, ul{
   background: black;
   border-radius: 50%;
 }
-.slick-current{
-  margin-top: 40px;
+.slick-slide{
   -webkit-transition: all .3s ease !important;
   -webkit-transition: all 0.3s ease !important;
   transition: all 0.3s ease !important;
+}
+.slick-slide:not(.slick-current){
+  margin-bottom: 60px;
+  @include pc(){
+    margin-bottom: 0;
+  }
+}
+.slick-current{
+  margin-top: 40px;
+  // -webkit-transition: all .3s ease !important;
+  // -webkit-transition: all 0.3s ease !important;
+  // transition: all 0.3s ease !important;
   @include pc(){
     margin-top: 0;
   }
