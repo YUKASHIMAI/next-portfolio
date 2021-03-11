@@ -184,8 +184,9 @@ $black: rgb(18, 18, 18);
   &__areaLabel{
     margin-top: 25px;
     width: 100%;
+    text-align: center;
     >div{
-      width: 65%;
+      width: 80%;
       border-radius: 30px;
     }
   }
@@ -245,7 +246,6 @@ $black: rgb(18, 18, 18);
     }
     &__areaLabel{
       width: 50%;
-      text-align: center;
     }
     &__areaTxt{
       margin-top: 0;
