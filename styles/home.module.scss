@@ -246,6 +246,9 @@ $black: rgb(18, 18, 18);
     }
     &__areaLabel{
       width: 50%;
+      >div{
+        width: 62%;
+      }
     }
     &__areaTxt{
       margin-top: 0;
