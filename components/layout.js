@@ -1,10 +1,13 @@
 import Head from 'next/head'
+import BodyClass from './BodyClass.js'
 import Image from 'next/image'
 import styles from './layout.module.scss'
+import homeStyles from '../styles/home.module.scss'
 import Link from 'next/link'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import {useState} from 'react';
 
+const pageName = 'home'
 const siteName = 'Portfolio | yukashimai'
 export const siteTitle = 'Portfolio | yukashimai'
 export const description = '日々新しい知識を吸収してプログラミングや開発フローの基礎知識を元に見やすく使いやすいだけでないSEO対策等を含めた集客力のあるWEBサイト制作で、気持ちいいユーザー体験やより良い情報の提供を実現します。'
@@ -14,9 +17,10 @@ export default function Layout({ children, home }) {
   const handleToggle = () => {
     setActive(!isActive);
   };
-
+  
   return (
-    <div id="app" name="top"  className={home ? ("home") : (siteName)}>
+    <div id="app" name="top"  className={pageName}>
+      <BodyClass />
       <Head>
         <meta
           property="og:image"
@@ -37,7 +41,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/static/image/favicon.ico" />
       </Head>
       <header className={styles.l_header}>
-        <div className={styles.hd_info}>
+        <div className={`${styles.hd_info} hd_info`}>
           <div className={styles.hd_info__inner}>
             <div className={styles.hd_info__logo}><AnchorLink href="#app" className={`${styles.hd_info__link} u_alpha`}></AnchorLink></div> 
             <a　role="button" id="menu" className={styles.hd_info__nav} onClick={handleToggle}><span className={styles.hd_info__nav__line}></span> <span className={styles.hd_info__nav__line}></span> <span className={styles.hd_info__nav__line}></span></a>
@@ -58,6 +62,8 @@ export default function Layout({ children, home }) {
         <footer className={styles.l_footer}><div className={`${styles.l_footer__inner} u_inner`}><p className={styles.l_footer__copyright}>©2020 YUKA SHIMAI</p></div></footer>
       </main>
       <style jsx>{`
+        .profile{
+        }
       `}</style>
     </div>
   )

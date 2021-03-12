@@ -1,14 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Layout, {page_slug , siteTitle} from '../components/layout'
-import styles from '../components/layout.module.scss'
-import homeStyles from '../styles/home.module.scss'
+import Layout, {siteTitle} from '../../components/layout'
+import homeStyles from '../../styles/home.module.scss'
+import '../../styles/profile.module.scss'
 import Link from 'next/link'
-// import Swiper from 'react-id-swiper';
-// import { Autoplay, Swiper as RealSwiper } from "swiper";
-// RealSwiper.use([Autoplay]);
-// import SwiperCore, { Pagination } from "swiper";
-// SwiperCore.use([Pagination]);
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import ReactTextTransition, { presets } from "react-text-transition";
 import AOS from "aos";
@@ -19,102 +14,57 @@ import Slider from "react-slick";
 
 const name = 'yuuka shimai'
 
-
-export default function Home() {
-  // WROKSスライダー
+export default function Profile() {
   const settings = {
-      dots: true,
-      arrows: false,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      cssEase: "linear",
-      initialSlide: 0,
-      centerMode: true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            initialSlide: 0,
-            centerMode: true
-          }
+    dots: true,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    cssEase: "linear",
+    initialSlide: 0,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0,
+          centerMode: true
         }
-      ]
+      }
+    ]
   };
-  // スクロール時要素をふわっと表示
-  useEffect(() => {
-    AOS.init();
-  });
-  useEffect(() => {
-    const path = window.location.hash
-    if (path && path.includes('#')) {
-      const id = path.replace('#', '')
-      const el = window.document.getElementById(id)
-      const r = el.getBoundingClientRect()
-      window.scrollTo({
-        top: r.top,
-        behavior: 'smooth'
-      })
-    }
-  })
-  const text = "Port-folio"
-  // const text2 = "Hi,I'm Yuuka 👋🏻"
-  var page_slug    = 'profile';
-
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div className={homeStyles.l_mainVisual}>
-        <div className={homeStyles.l_mainVisual__inner}>
-          <div className={homeStyles.l_mainVisual__areaTit}>
-          <p id="l_mainVisual__tit" className={homeStyles.l_mainVisual__tit}>
-            {text.split("").map(function(char, index){
-              const style = {"animation-delay": (300 + index * 300) + "ms"};
-              return <span key={index} style={style}>{char}</span>;
-            })}
-          </p>
-          </div>
-          <div className={homeStyles.l_mainVisual__menu}>
-            <div className={homeStyles.l_mainVisual__name}>by. yuka shimai</div> 
-            <div className={homeStyles.l_mainVisual__menu__list}>
-              <div className={homeStyles.l_mainVisual__menu__item}><AnchorLink href="#profile" className={homeStyles.l_mainVisual__menu__link}>PROFILE</AnchorLink></div> 
-              <div className={homeStyles.l_mainVisual__menu__item}><AnchorLink href="#skill" className={homeStyles.l_mainVisual__menu__link}>SKILL</AnchorLink></div> 
-              <div className={homeStyles.l_mainVisual__menu__item}><AnchorLink href="#works" className={homeStyles.l_mainVisual__menu__link}>WORKS</AnchorLink></div> 
-              <div className={homeStyles.l_mainVisual__menu__item}><AnchorLink href="#contact" className={homeStyles.l_mainVisual__menu__link}>CONTACT</AnchorLink></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="l_container">
         <main>
-          <section id="profile" className={homeStyles.secProfile}>
-            <div className={homeStyles.profile__bg}></div> 
-            <div className={`${homeStyles.profile__inner} u-inner u-cf`} >
-              <h2 className={`${homeStyles.profile__tit} c-head01 u-font-times`} data-aos="fade-up" data-aos-duration="2000">PROFILE</h2> 
+          <section id="profile" className={`${homeStyles.secProfile} secProfile`}>
+            <div className={`${homeStyles.profile__bg} profile__bg`}></div> 
+            <div className={`${homeStyles.profile__inner} profile__inner u-inner u-cf`} >
+              <h2 className={`${homeStyles.profile__tit} c-head01 u-font-times`} data-aos="fade-up" data-aos-duration="2000">CAREER</h2> 
               <div className={homeStyles.profile__areaLabelTxt}>
-                <div className={homeStyles.profile__areaLabel} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1100">
+                {/* <div className={homeStyles.profile__areaLabel} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1100">
                   <Image src="/static/image/top/profile.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
-                </div> 
-                <div className={homeStyles.profile__areaTxt}>
+                </div>  */}
+                <div className={`${homeStyles.profile__areaTxt} profile__areaTxt`}>
                   <ul className={homeStyles.profile__list}>
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__name}>島居 夕歌　<span className={homeStyles.profile__nameEn}>YUKA SHIMAI</span></span><br />フロントエンドエンジニア</li> 
-                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>年齢：</span> 25歳</li>
-                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>座右の銘：</span> 七転び八起き・一期一会</li>  
-                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">日々新しい知識を吸収してプログラミングや開発フローの基礎知識を元に見やすく使いやすいだけでないSEO対策等を含めた集客力のあるWEBサイト制作で、気持ちいいユーザー体験やより良い情報の提供を実現します。</li>
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2017年</span><br />日本に帰国後、サンフランシスコにてプログラミング好きの仲間に出会ったことをきっかけにWEBの世界に惹かれプログラマーを目指す。</li> 
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2017年</span><br />日本に帰国後、サンフランシスコにてプログラミング好きの仲間に出会ったことをきっかけにWEBの世界に惹かれプログラマーを目指す。</li> 
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">0から技術を習得するべく「社内セミナーの案内ツール」「出張旅費精算支援ツール」「3目並べ」等を社内研修で構築しながらHTML, CSS, JS, PHP等のプログラミング言語を習得。
+                    </li> 
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2018年</span><br />WEB制作会社に入社後、クライアント向けのHP制作に従事する。コーディング、CMS（WordPress,MovableType）組み込み作業に没頭しフロントエンドエンジニアとして成長。</li> 
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">その後フォーム構築やデータベース等、WEBサイト制作においての幅広い知識に触れ、現在はReact(Next.js)、Vue(Nuxt.js)やLaravel等のワンランク上のスキルを磨きながら日々より良いモノ作りのため勉強中。</li>
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"></li>
                   </ul>
-                  <div className={`${homeStyles.profile__btn} c-btn01`} data-aos="fade-up" data-aos-duration="2000">
-                    <Link href="/profile">
-                      <a>MORE ABOUT ME</a>
-                    </Link>
-                  </div>
                 </div>
               </div>
             </div>
@@ -182,14 +132,17 @@ export default function Home() {
                 </ul>
               </div> 
               <div className={homeStyles.works__bg}></div>
-              <div className={`${homeStyles.works__btn} c-btn01`} data-aos="fade-up" data-aos-duration="2000">
-                <Link href="/career">
-                  <a>MORE ABOUT CAREER</a>
-                </Link>
-              </div>
             </div>
           </section>
           {/* #works */}
+         
+          <div className={`${homeStyles.profile__topBtn} profile__topBtn c-btn01`} data-aos="fade-up" data-aos-duration="2000">
+            <Link href="/">
+              <a>BACK TO TOP</a>
+            </Link>
+          </div>
+          
+         
           <section id="contact" className={homeStyles.contact}>
             <div  className={`${homeStyles.contact__inner} u-inner`} data-aos="fade-up" data-aos-duration="2000">
               <a href="/contact/" target="_blank">
@@ -204,6 +157,7 @@ export default function Home() {
 
         </main>
         <style jsx>{`
+
         `}</style>
       </div>
     </Layout>

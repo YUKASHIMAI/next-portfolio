@@ -75,7 +75,7 @@ ol, ul{
 
 .c-head01{
   color: #581F1F;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   text-align: center;
   letter-spacing: .1em;
   @include pc(){
@@ -84,18 +84,21 @@ ol, ul{
 }
 // btn
 .c-btn01{
-  display: block;
-  padding: 12px 10px;
-  max-width: 320px;
-  color: #fff;
   text-align: center;
-  background: #AD1B51;
-  border-radius: 14px;
-  box-sizing: border-box;
-  transition: all 0.3s ease;
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 10px 0 20px rgb(0 0 0 / 19%), 6px 0 6px rgb(0 0 0 / 23%);
+  a{
+    display: block;
+    margin: 0 auto;
+    padding: 12px 10px;
+    max-width: 320px;
+    color: #fff;
+    background: #AD1B51;
+    border-radius: 14px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 0 20px rgb(0 0 0 / 19%), 6px 0 6px rgb(0 0 0 / 23%);
+    }
   }
 }
 
@@ -155,3 +158,82 @@ ol, ul{
   opacity: 1;
 }
 
+.profile{
+  .hd_info{
+    display: none;
+  }
+  .secProfile{
+    &:before{
+      top: 265px;
+      height: calc(100% - 265px);
+    }
+  }
+  #contact{
+    margin-top: 50px;
+  }
+  .profile{
+    &__topBtn{
+      max-width: 320px;
+    }
+  }
+  @include pc(){
+    .profile{
+      &__inner{
+        padding-top: 160px;
+        padding-bottom: 160px;
+      }
+    }
+  }
+}
+
+.career{
+  color:#581F1F;
+  .secProfile{
+    background: #fff;
+    &:before{
+      top: 145px;
+      height: calc(100% - 220px);
+    }
+  }
+  .hd_info{
+    display: none;
+  }
+  .profile{
+    &__areaTxt{
+      margin: 30px auto 0;
+      float: none;
+      background: #fff;
+    }
+    &__bg{
+      background: #fff;
+    }
+    &__topBtn{
+      margin-top: 10px;
+      max-width: 320px;
+    }
+  }
+  #contact{
+    margin-top: 40px;
+  }
+  @include pc(){
+    .secProfile{
+      &:before{
+        left: calc(50% - 132px);
+      }
+    }
+    .profile{
+      &__inner{
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+.contact{
+  .hd_info{
+    display: none;
+  }
+  .c-btn01{
+    margin: 30px auto 0;
+  }
+}

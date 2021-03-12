@@ -15,7 +15,12 @@ export default function Home() {
       </Head>
       <div className="container">
           <div className="title">
-            <p>お探しのページはございません。</p> <Link href="/"><a>Back to Top.</a></Link>
+            <p>お探しのページはございません。</p> 
+            <div className="c-btn01" data-aos="fade-up" data-aos-duration="2000">
+              <Link href="/">
+                <a>BACK TO TOP</a>
+              </Link>
+            </div>
           </div>
       </div>
     <style jsx>{`

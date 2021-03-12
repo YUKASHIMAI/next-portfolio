@@ -59,7 +59,7 @@ $black: rgb(18, 18, 18);
         flex-wrap: wrap;
     }
     &__logo{
-        padding: 15px 0 0 20px;
+        padding: 15px 0 15px 20px;
         -webkit-box-sizing: content-box;
         box-sizing: content-box;
     }
@@ -106,11 +106,6 @@ $black: rgb(18, 18, 18);
         }
     }
     @include pc(){
-        &__logo{
-            padding: 15px 0 0 20px;
-            -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-        }
         &__link{
             background: #DC255B;
             &:before{
@@ -212,6 +207,10 @@ $black: rgb(18, 18, 18);
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
+    top: 75px;
+    @include pc(){
+        top: 0;
+    }
 }
 
 
@@ -236,4 +235,3 @@ $black: rgb(18, 18, 18);
         }
     }
 }
-

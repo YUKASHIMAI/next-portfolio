@@ -1,4 +1,5 @@
 import '../styles/global.scss'
+import '../styles/profile.module.scss'
 import 'swiper/swiper.scss';
 import "swiper/components/pagination/pagination.min.css";
 import "slick-carousel/slick/slick.css"; 
