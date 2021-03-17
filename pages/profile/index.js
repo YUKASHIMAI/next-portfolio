@@ -66,7 +66,7 @@ export default function Profile() {
               <h2 className={`${homeStyles.hobby__tit} c-head01 u-font-times`} data-aos="fade-up" data-aos-duration="2000">HOBBY</h2> 
               <div className={homeStyles.hobby__areaTxtImg}>
                 <ul className={homeStyles.hobby__list}>
-                  <li className={`${homeStyles.hobby__item}`} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200"><span className={homeStyles.hobby__listTit}>趣味は野球観戦です。</span>特に、MLB LA Angelsの大谷翔平選手の大ファンで毎日試合結果や活躍は欠かさずチェックしています🤎</li> 
+                  <li className={`${homeStyles.hobby__item}`} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200"><span className={homeStyles.hobby__listTit}>趣味は野球観戦、ドラマ鑑賞、言語学習（韓国語、中国語等）です。</span>特に、MLB LA Angelsの大谷翔平選手の大ファンで毎日試合結果や活躍は欠かさずチェックしています🤎</li> 
                   <li className={`${homeStyles.hobby__item}`} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">今では全米中にベーブルース以来、前例のなかった投手と打者の二刀流の選手として認知され、メジャー1年目には新人賞を獲得したりホームランを年間多数打ったりピッチャーとしても大活躍しています。</li> 
                   <li className={`${homeStyles.hobby__item}`} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">前例のないことにも諦めずに方法を模索する姿や、怪我した際でも人知れずコツコツと地道に毎日リハビリを続ける姿、驚くようなプレイで人々を魅きつける姿に日々刺激を受けています。いつ何時もポジティブに笑顔をたやさず周りからも愛される人柄にこちらも元気をもらいながら見習えるところは見習っていきたいと考えています。</li> 
                   <li className={`${homeStyles.hobby__item}`} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200"></li> 
