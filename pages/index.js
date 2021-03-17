@@ -123,51 +123,53 @@ export default function Home() {
           <section id="skill" className={homeStyles.skill}>
             <div className={`${homeStyles.skill__inner} u-inner u-cf`}>
               <h2 className={`${homeStyles.skill__tit} c-head01 u-font-timese`} data-aos="fade-up" data-aos-duration="2000">SKILL</h2> 
-              <div className={`${homeStyles.skill__icons} skill__div u-cf`}>
-                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500">
-                  <Image src="/static/image/top/skill01.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+              <div className={homeStyles.skill__items}>
+                <div className={`${homeStyles.skill__icons} skill__div u-cf`}>
+                  <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500">
+                    <Image src="/static/image/top/skill01.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                  </div>
+                  <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+                    <Image src="/static/image/top/skill02.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                  </div> 
+                  <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">
+                  <Image src="/static/image/top/skill03.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                  </div> 
+                  <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="400">
+                    <Image src="/static/image/top/skill04.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                  </div> 
+                  <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">
+                    <Image src="/static/image/top/skill05.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                  </div> 
+                  <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="600">
+                    <Image src="/static/image/top/skill06.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                  </div> 
+                  <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="700">
+                    <Image src="/static/image/top/skill07.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                  </div>
+                  <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="800">
+                    <Image src="/static/image/top/skill08.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                  </div> 
+                  <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="900">
+                    <Image src="/static/image/top/skill09.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                  </div> 
+                  <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="1000">
+                    <Image src="/static/image/top/skill10.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                  </div> 
+                  <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="1100">
+                    <Image src="/static/image/top/skill11.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                  </div> <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="1200">
+                    <Image src="/static/image/top/skill12.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                  </div>
                 </div>
-                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
-                  <Image src="/static/image/top/skill02.png" layout="intrinsic" width={400} height={400} alt={name}/> 
-                </div> 
-                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">
-                 <Image src="/static/image/top/skill03.png" layout="intrinsic" width={400} height={400} alt={name}/> 
-                </div> 
-                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="400">
-                  <Image src="/static/image/top/skill04.png" layout="intrinsic" width={400} height={400} alt={name}/> 
-                </div> 
-                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="500">
-                  <Image src="/static/image/top/skill05.png" layout="intrinsic" width={400} height={400} alt={name}/> 
-                </div> 
-                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="600">
-                  <Image src="/static/image/top/skill06.png" layout="intrinsic" width={400} height={400} alt={name}/> 
-                </div> 
-                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="700">
-                  <Image src="/static/image/top/skill07.png" layout="intrinsic" width={400} height={400} alt={name}/> 
+                <div className={`${homeStyles.skill__img} skill__div`} data-aos="fade-up" data-aos-duration="2000">
+                  <Image src="/static/image/top/skill_image.png" layout="intrinsic" width={400} height={400} alt={name}/> 
                 </div>
-                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="800">
-                  <Image src="/static/image/top/skill08.png" layout="intrinsic" width={400} height={400} alt={name}/> 
-                </div> 
-                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="900">
-                  <Image src="/static/image/top/skill09.png" layout="intrinsic" width={400} height={400} alt={name}/> 
-                </div> 
-                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="1000">
-                  <Image src="/static/image/top/skill10.png" layout="intrinsic" width={400} height={400} alt={name}/> 
-                </div> 
-                <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="1100">
-                  <Image src="/static/image/top/skill11.png" layout="intrinsic" width={400} height={400} alt={name}/> 
-                </div> <div className={homeStyles.skill__icons__image} data-aos="fade-left" data-aos-duration="500" data-aos-delay="1200">
-                  <Image src="/static/image/top/skill12.png" layout="intrinsic" width={400} height={400} alt={name}/> 
-                </div>
-              </div>
-              <div className={`${homeStyles.skill__img} skill__div`} data-aos="fade-up" data-aos-duration="2000">
-                <Image src="/static/image/top/skill_image.png" layout="intrinsic" width={400} height={400} alt={name}/> 
               </div>
             </div>
           </section>
           {/* #skill */}
           <section id="works" class="works">
-            <div className={homeStyles.works__inner}>
+            <div className={`${homeStyles.works__inner} u-inner`}>
               <h2 className={`${homeStyles.works__tit} c-head01 u-font-times`} data-aos="fade-up" data-aos-duration="2000">WORKS</h2> 
               <div className={`${homeStyles.works__areaList} u-inner`}>
                 <ul className={homeStyles.works__list}>

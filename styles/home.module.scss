@@ -172,7 +172,7 @@ $black: rgb(18, 18, 18);
     content: "";
     top: 150px;
     left: 64px;
-    width: 3px;
+    width: 4px;
     height: calc(100% - 150px);
     background: #AD1B51;
   }
@@ -186,6 +186,8 @@ $black: rgb(18, 18, 18);
     }
   }
 }
+
+// profile
 .profile{
   &__inner{
     padding-top: 65px;
@@ -230,7 +232,6 @@ $black: rgb(18, 18, 18);
     font-size: 1rem;
   }
   &__year{
-    color: #AD1B51;
     font-size: 1.5rem;
     font-weight: 700;
   }
@@ -299,6 +300,7 @@ $black: rgb(18, 18, 18);
   }
 }
 
+// skill
 .skill{
   &__inner{
     padding-top: 80px;
@@ -310,11 +312,103 @@ $black: rgb(18, 18, 18);
       margin: 0 4px;
       width: calc(33.3333% - 8px);
       float: left;
+      &01{
+        cursor: pointer;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        &:hover{
+          -webkit-transition: all .3s ease;
+          transition: all .3s ease;
+          & + .skill__areaTxt01{
+            display: block;
+            margin: 0;
+            padding-left: 40px;
+            position: absolute;
+            right: 0;
+            width: 45%;
+            box-sizing: border-box;
+          }
+        }
+      }
+      &02{
+        cursor: pointer;
+        &:hover{
+          & + .skill__areaTxt02{
+            display: block;
+            margin: 0;
+            padding-left: 40px;
+            position: absolute;
+            right: 0;
+            width: 45%;
+            box-sizing: border-box;
+          }
+        }
+      }
+      &03{
+        cursor: pointer;
+        &:hover{
+          & + .skill__areaTxt03{
+            display: block;
+            margin: 0;
+            padding-left: 40px;
+            position: absolute;
+            right: 0;
+            width: 45%;
+            box-sizing: border-box;
+          }
+        }
+      }
+      &04{
+        cursor: pointer;
+        &:hover{
+          & + .skill__areaTxt04{
+            display: block;
+            margin: 0;
+            padding-left: 40px;
+            position: absolute;
+            right: 0;
+            width: 45%;
+            box-sizing: border-box;
+          }
+        }
+      }
+      &05{
+        cursor: pointer;
+        &:hover{
+          & + .skill__areaTxt05{
+            display: block;
+            margin: 0;
+            padding-left: 40px;
+            position: absolute;
+            right: 0;
+            width: 45%;
+            box-sizing: border-box;
+          }
+        }
+      }
+      &06{
+        cursor: pointer;
+        &:hover{
+          & + .skill__areaTxt06{
+            display: block;
+            margin: 0;
+            padding-left: 40px;
+            position: absolute;
+            right: 0;
+            width: 45%;
+            box-sizing: border-box;
+          }
+        }
+      }
     }
+  }
+  &__areaTxt{
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
   }
   &__img{
     display: block ;
-    margin: 60px auto 0;
+    margin: 40px auto 0;
     width: 60% ;
     max-width: 206px ;
   }
@@ -323,21 +417,27 @@ $black: rgb(18, 18, 18);
       padding-top: 150px;
       padding-bottom: 40px;
     }
+    &__items{
+      display: flex;
+      margin-top: 80px;
+      justify-content: center;
+      align-items: center;
+    }
     &__icons{
       width: 55%;
-      float: left;
-      margin: 45px -19px 0;
+      margin: 0;
+      padding-right: 40px;
+      box-sizing: border-box;
       &__image{
         width: calc(25% - 38px);
         margin: 0 19px;
       }
     }
     &__img{
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
       width: 45%;
-      float: left;
+      margin: 0;
+      padding-left: 40px;
+      box-sizing: border-box;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
@@ -345,6 +445,19 @@ $black: rgb(18, 18, 18);
       -ms-flex-align: center;
       align-items: center;
       max-width: none;
+      text-align: center;
+    }
+    &__areaTxt{
+      display: none;
+      padding: 50px;
+      text-align-last: left;
+      border: solid 6px #CE6A7B;
+      border-radius: 30px;
+    }
+    &__txtTit{
+      text-align: center;
+      font-weight: 700;
+      font-size: 2rem;
     }
   }
 }
@@ -385,6 +498,9 @@ $black: rgb(18, 18, 18);
     // max-width: 280px;
     &__img{
       background-color: #fff;
+      >div{
+        width: 100%;
+      }
     }
     &__areaTxt{
       margin-top: -2px;
@@ -403,7 +519,7 @@ $black: rgb(18, 18, 18);
     margin: 0 auto;
     width: 90%;
     border-radius: 0 0 30px 30px;
-    -webkit-box-shadow: 0 6px 9px 0px rgb(0 0 0 / 16%);
+    -webkit-box-shadcow: 0 6px 9px 0px rgb(0 0 0 / 16%);
     box-shadow: 0 6px 9px 0px rgb(0 0 0 / 16%);
   }
   &__btn{
@@ -412,21 +528,20 @@ $black: rgb(18, 18, 18);
   }
   @include pc(){
     &__inner{
-      padding: 150px 0 50px;
-      max-width: none;
+      padding: 150px 0;
     }
     &__bg{
       margin: -233px 0 0;
       height: 400px;
     }
     &__areaList{
-      margin: 55px auto 0;
+      margin: 40px auto 0;
       max-width: none;
     }
     &__item{
+      max-width: none;
       margin-top: 40px;
       margin-bottom: 60px;
-      max-width: none;
     }
     &__link{
       width: 80%;
@@ -443,12 +558,11 @@ $black: rgb(18, 18, 18);
     }
     &__btn{
       max-width: 320px;
-      margin:-160px 60px 0 0;
+      margin:-120px 60px 0 0;
       float: right;
     }
   }
 }
-
 .contact{
   a{
     text-decoration: none;
@@ -540,8 +654,8 @@ $black: rgb(18, 18, 18);
   }
   @include pc(){
     &__inner{
-      padding-top: 160px;
-      padding-bottom: 160px;
+      padding-top: 150px;
+      padding-bottom: 150px;
     }
     &__list{
       display: flex;

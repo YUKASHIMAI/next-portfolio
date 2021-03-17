@@ -137,6 +137,9 @@ ol, ul{
     margin-top: 0;
   }
 }
+.slick-list{
+  overflow: inherit !important;
+}
 
 .nav_is_active{
   z-index: 50;
@@ -177,12 +180,6 @@ ol, ul{
     }
   }
   @include pc(){
-    .profile{
-      &__inner{
-        padding-top: 160px;
-        padding-bottom: 160px;
-      }
-    }
   }
 }
 
@@ -218,12 +215,31 @@ ol, ul{
   @include pc(){
     .secProfile{
       &:before{
-        left: calc(50% - 132px);
+        top: 275px;
+        left: calc(25% + 49px);
+        width: 5∂px;
+        height: calc(100% - 280px);
       }
     }
     .profile{
       &__inner{
         padding-bottom: 20px;
+      }
+      &__areaTxt{
+        margin: 0 auto;
+      }
+      &__item{
+        padding-left: 100px;
+        &:before{
+          left: 27px;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 1720px){
+    .secProfile{
+      &:before{
+        left: calc(50vw - 380px);
       }
     }
   }
