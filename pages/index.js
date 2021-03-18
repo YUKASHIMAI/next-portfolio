@@ -105,10 +105,10 @@ export default function Home() {
                 </div> 
                 <div className={homeStyles.profile__areaTxt}>
                   <ul className={homeStyles.profile__list}>
-                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__name}>島居 夕歌　<span className={homeStyles.profile__nameEn}>YUKA SHIMAI</span></span><br />フロントエンドエンジニア</li> 
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__name}>島居 夕歌　<span className={homeStyles.profile__nameEn}>YUKA SHIMAI</span></span></li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>年齢：</span> 25歳</li>
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>座右の銘：</span> 七転び八起き・一期一会</li>  
-                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">日々新しい知識を吸収してプログラミングや開発フローの基礎知識を元に見やすく使いやすいだけでないSEO対策等を含めた集客力のあるWEBサイト制作で、気持ちいいユーザー体験やより良い情報の提供を実現します。</li>
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">日々新しい知識を吸収してプログラミングや開発フローの基礎知識を元に見やすく使いやすいだけでないSEO対策等を含めた集客力のあるWEBサイト制作で、気持ちいいユーザー体験やより良い情報の提供をしていきながら今後は今までの技術力とコミュニケーション能力を活かして働きます。</li>
                   </ul>
                   <div className={`${homeStyles.profile__btn} c-btn01`} data-aos="fade-up" data-aos-duration="2000">
                     <Link href="/profile">
@@ -194,7 +194,7 @@ export default function Home() {
           {/* #works */}
           <section id="contact" className={homeStyles.contact}>
             <div  className={`${homeStyles.contact__inner} u-inner`} data-aos="fade-up" data-aos-duration="2000">
-              <a href="/contact/" target="_blank">
+              <a href="https://yshimai321.xsrv.jp/contact/" target="_blank">
                 <div className={homeStyles.contact__areaContact}>
                   <h2  className={`${homeStyles.contact__tit} u-font-times`} data-aos="fade-up" data-aos-duration="2000">CONTACT</h2> 
                   <p className={homeStyles.contact__txt} data-aos="fade-up" data-aos-duration="2000">こちらからお問い合わせください</p>

@@ -56,12 +56,13 @@ export default function Profile() {
                 </div>  */}
                 <div className={`${homeStyles.profile__areaTxt} profile__areaTxt`}>
                   <ul className={homeStyles.profile__list}>
-                    <li className={`${homeStyles.profile__item} profile__item`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__name}>島居 夕歌　<span className={homeStyles.profile__nameEn}>YUKA SHIMAI</span></span><br />フロントエンドエンジニア</li> 
+                    <li className={`${homeStyles.profile__item} profile__item`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__name}>島居 夕歌　<span className={homeStyles.profile__nameEn}>YUKA SHIMAI</span></span></li> 
                     <li className={`${homeStyles.profile__item} profile__item`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2017年</span><br />日本に帰国後、サンフランシスコにてプログラミング好きの仲間に出会ったことをきっかけにWEBの世界に惹かれプログラマーを目指す。</li> 
                     <li className={`${homeStyles.profile__item} profile__item`} data-aos="fade-up" data-aos-duration="2000">0から技術を習得するべく「社内セミナーの案内ツール」「出張旅費精算支援ツール」「3目並べ」等を社内研修で構築しながらHTML, CSS, JS, PHP等のプログラミング言語を習得。
                     </li> 
                     <li className={`${homeStyles.profile__item} profile__item`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2018年</span><br />WEB制作会社に入社後、クライアント向けのHP制作に従事する。コーディング、CMS（WordPress,MovableType）組み込み作業に没頭しフロントエンドエンジニアとして成長。</li> 
-                    <li className={`${homeStyles.profile__item} profile__item`} data-aos="fade-up" data-aos-duration="2000">その後フォーム構築やデータベース等、WEBサイト制作においての幅広い知識に触れ、現在はReact(Next.js)、Vue(Nuxt.js)やLaravel等のワンランク上のスキルを磨きながら日々より良いモノ作りのため勉強中。</li>
+                    <li className={`${homeStyles.profile__item} profile__item`} data-aos="fade-up" data-aos-duration="2000">その後フォーム構築やデータベース等、WEBサイト制作においての幅広い知識に触れ、現在はReact(Next.js)、Vue(Nuxt.js)やLaravel等のワンランク上のスキルを磨きながら日々より良いモノ作りのため独学で勉強。</li>
+                    <li className={`${homeStyles.profile__item} profile__item`} data-aos="fade-up" data-aos-duration="2000">今後は今までの培ってきた技術を糧にまたコミュニケーション能力を活かしながら一緒に物づくりや開発を楽しく進めていきたいと考えています。</li>
                     <li className={`${homeStyles.profile__item} profile__item`} data-aos="fade-up" data-aos-duration="2000"></li>
                   </ul>
                 </div>
@@ -170,7 +171,7 @@ export default function Profile() {
          
           <section id="contact" className={homeStyles.contact}>
             <div  className={`${homeStyles.contact__inner} u-inner`} data-aos="fade-up" data-aos-duration="2000">
-              <a href="/contact/" target="_blank">
+              <a href="https://yshimai321.xsrv.jp/contact/" target="_blank">
                 <div className={homeStyles.contact__areaContact}>
                   <h2  className={`${homeStyles.contact__tit} u-font-times`} data-aos="fade-up" data-aos-duration="2000">CONTACT</h2> 
                   <p className={homeStyles.contact__txt} data-aos="fade-up" data-aos-duration="2000">こちらからお問い合わせください</p>
