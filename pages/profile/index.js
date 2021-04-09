@@ -40,7 +40,11 @@ export default function Profile() {
                   </span>
                   <span className={homeStyles.profile__label}>
                     <Image src="/static/image/profile/profile08.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
-                    <span>アメリカ/ホストマザーに助けて頂きながらなんとか生活</span>
+                    <span>アメリカ/ホストマザーや仲間に助けて頂きながら大学生活</span>
+                  </span>
+                  <span className={homeStyles.profile__label}>
+                    <Image src="/static/image/profile/profile09.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
+                    <span>IT基礎の勉強からプログラマーの道を歩み始める</span>
                   </span>
                 </div> 
                 <div className={homeStyles.profile__areaTxt}>
@@ -53,7 +57,7 @@ export default function Profile() {
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2015年</span><br />NIC International School in Japan　卒業<br />大阪にある1年の留学準備機関にて大量の課題やプレゼンテーション、ディスカッションなどアメリカの大学生活で生きていく術を身につける。<br />卒業後、アメリカへ出発までの３ヶ月バイト代を貯めてフィリピンに1ヶ月留学。ダバオにあるSeattle Language CenterにてTOEFLの点数を上げるために日々英語の勉強とフィリピン人の先生方と楽しくお出かけや卓球、バスケをする。</li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2018年</span><br />Diablo Valley College 卒業<br />アメリカ、サンフランシスコの短期大学にて経済学を専攻。シリコンバレーという地に集まるたくさんのプログラミング好きの仲間に出会い、初めてプログラミンにに触れる。</li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2017年</span><br />日本に帰国後、サンフランシスコにてプログラミング好きの仲間に出会ったことをきっかけにWEBの世界に惹かれプログラマーを目指す。</li> 
-                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">0から技術を習得するべくWEB制作会社に入社後、コーディング、CMS組み込み作業に没頭しフロントエンドエンジニアとして成長。</li> 
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">0から技術を習得するべくIT技術の基礎を学んだのち、WEB制作会社に入社し、コーディング、CMS組み込み作業に没頭しフロントエンドエンジニアとして成長。</li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">その後フォーム構築やデータベース等、WEBサイト制作においての幅広い知識に触れ、現在はReact(Next.js)やLaravel等のワンランク上のスキルを磨きながら日々より良いモノ作りのため勉強。</li>
                   </ul>
                 </div>
