@@ -31,7 +31,7 @@ export default function Profile() {
                     <span>3歳</span>
                   </span>
                   <span className={homeStyles.profile__label}>
-                    <Image src="/static/image/profile/profile01.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
+                    <Image src="/static/image/profile/profile01.jpg" layout="fixed" width={600} height={602} alt={name}/>
                     <span>中学生/クラブに明け暮れていた時期</span>
                   </span>
                   <span className={homeStyles.profile__label}>
