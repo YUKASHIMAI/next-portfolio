@@ -39,18 +39,6 @@ export default function Profile() {
                     <span>30万、バイト代を貯めて１ヶ月フィリピン留学</span>
                   </span>
                   <span className={homeStyles.profile__label}>
-                    <Image src="/static/image/profile/profile04.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
-                    <span>フィリピン/学校の先生と一緒に夜アイスクリーム屋さん🍦</span>
-                  </span>
-                  <span className={homeStyles.profile__label}>
-                    <Image src="/static/image/profile/profile03.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
-                    <span>フィリピン/親日家の方々ばかり</span>
-                  </span>
-                  <span className={homeStyles.profile__label}>
-                    <Image src="/static/image/profile/profile06.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
-                    <span>フィリピン/素晴らしい仲間に出会う</span>
-                  </span>
-                  <span className={homeStyles.profile__label}>
                   <Image src="/static/image/profile/profile07.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
                   <span>フィリピン/お祭りに参加しフィリピンの文化にも触れる</span>
                   </span>
