@@ -36,7 +36,7 @@ export default function Profile() {
                   </span>
                   <span className={homeStyles.profile__label}>
                     <Image src="/static/image/profile/profile02.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
-                    <span>30万、バイト代を貯めて１ヶ月フィリピン留学</span>
+                    <span>バイト代30万円を貯めて１ヶ月フィリピン留学</span>
                   </span>
                   <span className={homeStyles.profile__label}>
                     <Image src="/static/image/profile/profile08.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
@@ -54,7 +54,7 @@ export default function Profile() {
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2008年</span><br />香港日本人学校大埔校 卒業<br />父親の仕事の関係により小学生の時代を香港で過ごす。たくさんの同じ境遇の日本人に囲まれながら日々楽しく暮らす。英語が堪能な現地の香港人とは片言の英語で会話。</li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2011年</span><br />私立四條畷学園中学校 普通科 卒業<br />小学卒業後日本に帰国し中学時代は、ソフトボール部に入部し365日毎日ソフトボールに打ち込む。中学3年時に大阪大会で優勝したが近畿大会で惜しくも敗退し夢の全国大会へは行けずだったがたくさんの素晴らしい仲間に出会う。</li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2014年</span><br />私立四條畷学園高等学校 特進文理科 卒業<br />特進クラスでは朝9時から18時まで毎日勉強の日々。</li> 
-                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2015年</span><br />NIC International School in Japan　卒業<br />大阪にある1年の留学準備機関にて大量の課題やプレゼンテーション、ディスカッションなどアメリカの大学生活で生きていく術を身につける。<br />卒業後、アメリカへ出発までの３ヶ月バイト代を貯めてフィリピンに1ヶ月留学。ダバオにあるSeattle Language CenterにてTOEFLの点数を上げるために日々英語の勉強とフィリピン人の先生方と楽しくお出かけや卓球、バスケをする。</li> 
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2015年</span><br />NIC International School in Japan　卒業<br />大阪にある1年の留学準備機関にて大量の課題やプレゼンテーション、ディスカッションなどアメリカの大学生活で生きていく術を身につける。<br />卒業後、アメリカへ出発までの３ヶ月バイト代を貯めてフィリピンに1ヶ月留学。ダバオにあるSeattle Language CenterにてTOEFLの点数を上げるために日々英語の勉強。</li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2018年</span><br />Diablo Valley College 卒業<br />アメリカ、サンフランシスコの短期大学にて経済学を専攻。シリコンバレーという地に集まるたくさんのプログラミング好きの仲間に出会い、初めてプログラミンにに触れる。</li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2017年</span><br />日本に帰国後、サンフランシスコにてプログラミング好きの仲間に出会ったことをきっかけにWEBの世界に惹かれプログラマーを目指す。</li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">0から技術を習得するべくIT技術の基礎を学んだのち、WEB制作会社に入社し、コーディング、CMS組み込み作業に没頭しフロントエンドエンジニアとして成長。</li> 
