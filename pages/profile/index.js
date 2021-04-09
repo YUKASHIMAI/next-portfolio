@@ -39,10 +39,6 @@ export default function Profile() {
                     <span>30万、バイト代を貯めて１ヶ月フィリピン留学</span>
                   </span>
                   <span className={homeStyles.profile__label}>
-                  <Image src="/static/image/profile/profile07.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
-                  <span>フィリピン/お祭りに参加しフィリピンの文化にも触れる</span>
-                  </span>
-                  <span className={homeStyles.profile__label}>
                     <Image src="/static/image/profile/profile08.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
                     <span>アメリカ/ホストマザーに助けて頂きながらなんとか生活</span>
                   </span>
