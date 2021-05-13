@@ -12,7 +12,7 @@ import { useEffect } from 'react'
 import Slider from "react-slick";
 
 
-const name = 'yuuka shimai'
+const name = 'ys'
 
 export default function Profile() {
   const settings = {
@@ -56,7 +56,7 @@ export default function Profile() {
                 </div>  */}
                 <div className={`${homeStyles.profile__areaTxt} profile__areaTxt`}>
                   <ul className={homeStyles.profile__list}>
-                    <li className={`${homeStyles.profile__item} profile__item`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__name}>島居 夕歌　<span className={homeStyles.profile__nameEn}>YUKA SHIMAI</span></span></li> 
+                    <li className={`${homeStyles.profile__item} profile__item`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__name}>Y.S<span className={homeStyles.profile__nameEn}>Y.S</span></span></li> 
                     <li className={`${homeStyles.profile__item} profile__item`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2017年</span><br />日本に帰国後、サンフランシスコにてプログラミング好きの仲間に出会ったことをきっかけにWEBの世界に惹かれプログラマーを目指す。</li> 
                     <li className={`${homeStyles.profile__item} profile__item`} data-aos="fade-up" data-aos-duration="2000">0から技術を習得するべく「社内セミナーの案内ツール」「出張旅費精算支援ツール」「3目並べ」等を社内研修で構築しながらHTML, CSS, JS, PHP等のプログラミング言語を習得。
                     </li> 

@@ -17,7 +17,7 @@ import { useEffect } from 'react'
 import Slider from "react-slick";
 
 
-const name = 'yuuka shimai'
+const name = 'ys'
 
 
 export default function Home() {
@@ -82,7 +82,7 @@ export default function Home() {
           </p>
           </div>
           <div className={homeStyles.l_mainVisual__menu}>
-            <div className={homeStyles.l_mainVisual__name}>by. yuka shimai</div> 
+            <div className={homeStyles.l_mainVisual__name}>by. ys</div> 
             <div className={homeStyles.l_mainVisual__menu__list}>
               <div className={homeStyles.l_mainVisual__menu__item}><AnchorLink href="#profile" className={homeStyles.l_mainVisual__menu__link}>PROFILE</AnchorLink></div> 
               <div className={homeStyles.l_mainVisual__menu__item}><AnchorLink href="#skill" className={homeStyles.l_mainVisual__menu__link}>SKILL</AnchorLink></div> 
@@ -105,7 +105,7 @@ export default function Home() {
                 </div> 
                 <div className={homeStyles.profile__areaTxt}>
                   <ul className={homeStyles.profile__list}>
-                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__name}>島居 夕歌　<span className={homeStyles.profile__nameEn}>YUKA SHIMAI</span></span></li> 
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__name}>Y.S　<span className={homeStyles.profile__nameEn}></span></span></li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>年齢：</span> 25歳</li>
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>座右の銘：</span> 七転び八起き・一期一会</li>  
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000">日々新しい知識を吸収してプログラミングや開発フローの基礎知識を元に見やすく使いやすいだけでないSEO対策等を含めた集客力のあるWEBサイト制作で、気持ちいいユーザー体験やより良い情報の提供をしていきながら今後は今までの技術力とコミュニケーション能力を活かして働きます。</li>

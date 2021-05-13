@@ -10,7 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 
-const name = 'yuuka shimai'
+const name = 'ys'
 
 export default function Profile() {
   return (
@@ -27,29 +27,29 @@ export default function Profile() {
               <div className={homeStyles.profile__areaLabelTxt}>
                 <div className={homeStyles.profile__areaLabel} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1100">
                   <span className={homeStyles.profile__label}>
-                    <Image src="/static/image/profile/profile.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
+                    <Image src="/static/image/profile/profile.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
                     <span>3歳</span>
                   </span>
                   <span className={homeStyles.profile__label}>
-                    <Image src="/static/image/profile/profile01.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
+                    <Image src="/static/image/profile/profile01.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
                     <span>中学生/クラブに明け暮れていた時期</span>
                   </span>
                   <span className={homeStyles.profile__label}>
-                    <Image src="/static/image/profile/profile02.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
+                    <Image src="/static/image/profile/profile02.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
                     <span>バイト代30万円を貯めて１ヶ月フィリピン留学</span>
                   </span>
                   <span className={homeStyles.profile__label}>
-                    <Image src="/static/image/profile/profile08.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
+                    <Image src="/static/image/profile/profile08.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
                     <span>アメリカ/ホストマザーや仲間に助けて頂きながら大学生活</span>
                   </span>
                   <span className={homeStyles.profile__label}>
-                    <Image src="/static/image/profile/profile09.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
+                    <Image src="/static/image/profile/profile09.jpg" layout="intrinsic" width={600} height={602} alt={name}/>
                     <span>IT基礎の勉強からプログラマーの道を歩み始める</span>
                   </span>
                 </div> 
                 <div className={homeStyles.profile__areaTxt}>
                   <ul className={homeStyles.profile__list}>
-                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__name}>島居 夕歌　<span className={homeStyles.profile__nameEn}>YUKA SHIMAI</span></span></li> 
+                    <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__name}>Y.S　<span className={homeStyles.profile__nameEn}></span></span></li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>1995年</span><br />シンガポールにて出生。</li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2008年</span><br />香港日本人学校大埔校 卒業<br />父親の仕事の関係により小学生の時代を香港で過ごす。たくさんの同じ境遇の日本人に囲まれながら日々楽しく暮らす。英語が堪能な現地の香港人とは片言の英語で会話。</li> 
                     <li className={`${homeStyles.profile__item}`} data-aos="fade-up" data-aos-duration="2000"><span className={homeStyles.profile__year}>2011年</span><br />私立四條畷学園中学校 普通科 卒業<br />小学卒業後日本に帰国し中学時代は、ソフトボール部に入部し365日毎日ソフトボールに打ち込む。中学3年時に大阪大会で優勝したが近畿大会で惜しくも敗退し夢の全国大会へは行けずだったがたくさんの素晴らしい仲間に出会う。</li> 
@@ -91,7 +91,7 @@ export default function Profile() {
                   <li className={`${homeStyles.hobby__item}`} data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200"></li> 
                 </ul>
                 <div className={homeStyles.hobby__images} data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
-                  <Image src="/static/image/profile/ohtanishohei2.jpeg" layout="intrinsic" width={904} height={600} alt={""}/> 
+                  <Image src="/static/image/profile/ohtanishohei2.jpeg" layout="intrinsic" width={904} height={600} alt={""}/> 
                 </div> 
               </div>
             </div>
