@@ -8,8 +8,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import {useState} from 'react';
 
 const pageName = 'home'
-const siteName = 'Portfolio | yukashimai'
-export const siteTitle = 'Portfolio | yukashimai'
+const siteName = 'Portfolio | YS'
+export const siteTitle = 'Portfolio | YS'
 export const description = '日々新しい知識を吸収してプログラミングや開発フローの基礎知識を元に見やすく使いやすいだけでないSEO対策等を含めた集客力のあるWEBサイト制作で、気持ちいいユーザー体験やより良い情報の提供を実現します。'
 
 export default function Layout({ children, home }) {
