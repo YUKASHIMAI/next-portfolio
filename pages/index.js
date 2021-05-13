@@ -82,7 +82,7 @@ export default function Home() {
           </p>
           </div>
           <div className={homeStyles.l_mainVisual__menu}>
-            <div className={homeStyles.l_mainVisual__name}>by. ys</div> 
+            <div className={homeStyles.l_mainVisual__name}>by. YS</div> 
             <div className={homeStyles.l_mainVisual__menu__list}>
               <div className={homeStyles.l_mainVisual__menu__item}><AnchorLink href="#profile" className={homeStyles.l_mainVisual__menu__link}>PROFILE</AnchorLink></div> 
               <div className={homeStyles.l_mainVisual__menu__item}><AnchorLink href="#skill" className={homeStyles.l_mainVisual__menu__link}>SKILL</AnchorLink></div> 
