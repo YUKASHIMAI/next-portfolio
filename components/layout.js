@@ -59,7 +59,7 @@ export default function Layout({ children, home }) {
       </header>
       <main>
         {children}
-        <footer className={styles.l_footer}><div className={`${styles.l_footer__inner} u_inner`}><p className={styles.l_footer__copyright}>©2020 YUKA SHIMAI</p></div></footer>
+        <footer className={styles.l_footer}><div className={`${styles.l_footer__inner} u_inner`}><p className={styles.l_footer__copyright}>©2020 YS</p></div></footer>
       </main>
       <style jsx>{`
         .profile{
